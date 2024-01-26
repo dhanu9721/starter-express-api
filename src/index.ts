@@ -32,6 +32,10 @@ app.get("/matchmake/joinOrCreate", (req, res) => {
     // Your logic for handling the GET request goes here
     res.status(200).send("Handling GET request for /matchmake/joinOrCreate");
 });
+app.get("/matchmake/joinOrCreate/", (req, res) => {
+    // Your logic for handling the GET request goes here
+    res.status(200).send("Handling GET request for /matchmake/joinOrCreate/");
+});
 
 // Use regular HTTP in development
 const server = createServer(app);
