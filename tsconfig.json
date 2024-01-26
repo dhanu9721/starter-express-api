@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "outDir": "build",
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "strict": true,
     "allowJs": true,
     "strictNullChecks": false,
@@ -12,12 +13,6 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false
   },
-    // other settings...
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  },
-
   "include": [
     "src"
   ]
