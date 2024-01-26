@@ -28,6 +28,11 @@ const port = parseInt(portString, 10);
 const app = express();
 app.use(express.json());
 
+app.get("/matchmake/joinOrCreate", (req, res) => {
+    // Your logic for handling the GET request goes here
+    res.status(200).send("Handling GET request for /matchmake/joinOrCreate");
+});
+
 // Use regular HTTP in development
 const server = createServer(app);
 
@@ -42,7 +47,7 @@ let gameServer = new Server({
 
 gameServer.define('GameRoom', MyRoom);
 gameServer.listen(port).then(() => {
-    console.info("Game started and listening on port",port);
+    console.info("Game started and listening on port", port);
 })
     .catch((err: any) => {
         console.error("Failed to listen on port" + err)
