@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "build",
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "outDir": "dist",
+    "target": "ES2017",
+    "module": "commonjs",
     "strict": true,
     "allowJs": true,
     "strictNullChecks": false,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": false
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*.ts"
-  ]
+    "src"
+, "index.ts"],
+  "exclude": ["node_modules"],
 }
